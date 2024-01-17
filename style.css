@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  /*-----Primary------*/
+  --Light-red: hsl(0, 100%, 67%);
+  --Orangey-yellow: hsl(39, 100%, 56%);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+
+  /* ## Gradients */
+
+  --Light-slate-blue-background: hsl(252, 100%, 67%);
+  --Light-royal-blue-background: hsl(241, 81%, 54%);
+  --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+  --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+header {
+  background: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding-bottom: 20px;
+  border-radius: 0px 0px 30px 30px;
+  text-align: center;
+}
+header h2 {
+  font-size: 0.9em;
+  margin: 20px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.circle {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  padding: 55px;
+  margin: 0 auto;
+  background: linear-gradient(
+    to bottom,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  border-radius: 50%;
+}
+.result {
+  position: absolute;
+  top: 15px;
+  font-size: 2.4em;
+  font-weight: 800;
+}
+.from {
+  font-size: 0.8em;
+  position: absolute;
+  bottom: 20px;
+  color: rgba(255, 255, 255, 0.5);
+}
+header h3 {
+  top: 200px;
+  margin: 20px 0px -15px;
+  font-size: 1.1em;
+  font-weight: 800;
+}
+header p {
+  margin: 0px 55px;
+  text-align: center;
+  font-size: 0.8em;
+  color: rgba(255, 255, 255, 0.57);
+}
+main {
+  margin: 15px 30px;
+}
+h3 {
+  padding-bottom: 20px;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+ul {
+  list-style: none;
+}
+ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 11px;
+  border-radius: 10px;
+  font-size: 0.8em;
+}
+ul li .left {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-weight: 600;
+}
+ul li .right {
+  color: rgba(0, 0, 0, 0.493);
+  font-weight: 500;
+}
+ul li strong {
+  color: black;
+  font-weight: 800;
+}
+ul li span {
+  font-weight: 100;
+  color: black;
+}
+ul .l1 {
+  color: hsl(0, 100%, 67%);
+  background-color: hsla(0, 100%, 67%, 0.05);
+}
+ul .l2 {
+  color: hsl(39, 100%, 56%);
+  background-color: hsla(39, 100%, 56%, 0.05);
+}
+ul .l3 {
+  color: hsl(166, 100%, 37%);
+  background-color: hsla(166, 100%, 37%, 0.05);
+}
+ul .l4 {
+  color: hsl(234, 85%, 45%);
+  background-color: hsla(234, 85%, 45%, 0.05);
+}
+button {
+  width: 100%;
+  padding: 15px;
+  border-radius: 40px;
+  color: rgba(255, 255, 255, 0.747);
+  background-color: hsl(224, 30%, 27%);
+  font-weight: 800;
+  font-size: 0.8em;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.attribution {
+  margin-top: 5px;
+  font-size: 0.65em;
+}
+
+@media screen and (min-width: 480px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .box {
+    padding: 0px;
+    width: 600px;
+    height: 415px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 30px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.192);
+    margin-top: 160px;
+    overflow: hidden;
+  }
+  header {
+    width: 350px;
+    border-radius: 30px;
+  }
+  header h2 {
+    margin-top: 30px;
+    font-size: 1.1em;
+  }
+
+  header .circle {
+    padding: 80px;
+    margin-top: 10px;
+  }
+  header .result {
+    position: absolute;
+    top: 30px;
+    font-size: 3em;
+  }
+  header .from {
+    position: absolute;
+    top: 95px;
+  }
+  header h3 {
+    font-size: 1.4em;
+    font-weight: 700;
+  }
+  header p {
+    font-size: 0.85em;
+    margin: 8px 35px;
+    font-weight: 700;
+  }
+  main {
+    width: 270px;
+  }
+  main h3 {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-top: 15px;
+  }
+  main ul li {
+    padding: 13px;
+  }
+  main button {
+    background-color: hsla(256, 72%, 46%, 1);
+    border: none;
+    padding: 15px;
+    margin-top: 25px;
+    font-size: 0.8em;
+  }
+}
+@media screen and (min-width: 576px) {
+  header p {
+    margin: 8px 45px;
+  }
+}
